@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" sizes="192x192" href="img/favicon.ico">
+          <!-- Link Swiper's CSS -->
+          <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Bootstrap -->
+    <link href="bootstrap files/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+    <title>Planes Flexibles</title>
+</head>
+<body>
+        <!-- HEADER -->
+        <div class="menu-container" id="menuContent">
+            <div class="sidebar" id="menu">    
+                <a class="active" href="#"><i class="fas fa-user-circle" style="font-size: 50px;"></i><br> Bienvenido <strong>Usuario</strong><br>
+                <p style="color: black; font-size: 12px;">Línea Asociada: 56941971111</p></a>
+                <!-- <a href="">Línea Asociada: linea</a> -->
+                <a href="#"><i class="fas fa-home" style="color: #65c810;"></i>Página Principal</a>
+                <a href="#"><i class="fas fa-shopping-bag" style="color: #15AABF;"></i>Mis Bolsas Disponibles</a>
+                <a href="#"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
+                <a href="#" class="collapsible"><i class="fas fa-shopping-cart" style="color: #e00000;"></i>Compra de Bolsas</a>
+                <div class="content">
+                    <ul>
+                        <li><a href="">Normales</a></li>
+                        <li><a href="">Roaming</a></li>
+                        <li><a href="">Recarga</a></li>
+                        <li><a href="">Preplan</a></li>
+                        <li><a href="">SOS</a></li>
+                    </ul>
+                </div>
+                <a href="#"><i class="fas fa-question-circle" style="color: #BE4BDB;"></i>Ayuda</a>
+                <a href="#" id="backMenu"><i class="fas fa-chevron-circle-left"></i>Volver</a>
+            </div>
+        </div> 
+
+            <header style="background-color: #00A9E0;">
+                <div class="container" style="background-color: #00A9E0;">
+                    <div class="row">
+                        <div class="col-xs-2 ml-2">
+                            <i class="fas fa-bars" id="btnMenu" style="color: white; font-size: 24px; margin-top: 5px;"></i>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#"><img src="img/movistarlogo.png" alt="Logo Movistar" width="150px"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="banner" id="banner">
+                <img src="img/banneriphone.jpg" width="100%" height="auto">
+                <a id="hideBanner" class="btn-hidebanner"><i class="fas fa-chevron-up" style="color:#99cc02; background-color: #ffffff;"></i></a>
+            </div>
+            <p class="float-right mt-3 mr-2"><strong>Saldo: $2.500</strong></p>
+            <style>
+                
+            </style>
+            <p>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bolsas Destacadas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Bolsas de Datos</a></li>
+                      <li><a class="dropdown-item" href="#">Bolsa de Minutos</a></li>
+                      <li><a class="dropdown-item" href="#">Bolsa de SMS</a></li>
+                    </ul>
+                  </div> -->
+
+                  <select class="form-control select-custom">
+                    <option value="collapseExample">Bolsas Destacadas</option>
+                    <option value="asd">Bolsas de Datos</option>
+                    <option>Bolsas de Minutos</option>
+                    <option>Bolsas de SMS</option>
+                  </select>
+        
+                <!-- <button class="btn btn-bolsas btn- btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <p class="m-0">Bolsas Destacadas</p>
+                </button> -->
+            
+              </p>
+              <div class="" id="test1">
+                <div class="card card-bolsas" style="width: 340px; padding: 10px; margin: 10px;">
+                    <div class="card-body" style="color: #005c84;">
+                      <h5 class="card-title font-weight-bold"><i class="fas fa-star" style="color: #f5f540;"></i>Navega 2 GB</h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Datos 24Hrs</h6>
+                      <p class="card-text"></p>
+                      <div class="row">
+                          <div class="col"><p class="font-weight-bold">$2.990</p></div>
+                          <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="" id="test2">
+                <div class="card card-bolsas" style="width: 340px; padding: 10px; margin: 10px;">
+                    <div class="card-body" style="color: #005c84;">
+                      <h5 class="card-title font-weight-bold"><i class="fas fa-star" style="color: #f5f540;"></i>Bolsa Internet GB Libres</h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de internet Libre 5 dias</h6>
+                      <p class="card-text"></p>
+                      <div class="row">
+                          <div class="col"><p class="font-weight-bold">$1.990</p></div>
+                          <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+              </div>
+
+        <!-- CONTENIDO -->
+
+
+    <footer class="col-md-12" style="background-color: #00A9E0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span><a href="http://www.movistar.cl/" class="link">Movistar</a> - Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+
+        document.getElementById("btnMenu").addEventListener("click",function(){
+  
+        document.getElementById("menu").classList.toggle("mostrar");
+        document.getElementById("menuContent").classList.toggle("back");
+        });
+
+        document.getElementById("backMenu").addEventListener("click",function(){
+  
+        document.getElementById("menu").classList.toggle("mostrar");
+        document.getElementById("menuContent").classList.toggle("back");
+        });
+
+        document.getElementById("hideBanner").addEventListener("click",function(){
+  
+        document.getElementById("banner").classList.toggle("mostrarbanner");
+        document.getElementById("hideBanner").classList.toggle("upbutton");
+        });
+
+    </script>
+</body>
+</html>
