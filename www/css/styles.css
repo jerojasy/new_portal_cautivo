@@ -88,98 +88,6 @@ p {
 
 /* CONTENT */
 
-/*colors*/
-.brand-color-1 {
-    color: #006ea6;
-}
-.brand-color-2 {
-    color: #99cc02;
-}
-
-.plan-title {
-    font-size: 20px;
-    color: #005c84;
-    width: 100%;
-    vertical-align: bottom;
-    display: inline-block;
-    font-family: "Roboto-bold";
-}
-
-.separator-line {
-    width: 100%;
-    border-top: 1px solid #9e9e9e;
-    margin: 15px 0px;
-    position: relative;
-}
-.separator-line:after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: white transparent transparent transparent;
-}
-.separator-line:before {
-    content: '';
-    position: absolute;
-    bottom: -9px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: #9e9e9e transparent transparent transparent;
-}
-.separator {
-    width: 100%;
-    border-top: 1px dashed #9e9e9e;
-    margin: 10px 0px;
-    float: left;
-}
-.separator-transparent {
-    margin: 10px 0px;
-    width: 100%;
-}
-.separator-line-2 {
-    width: 100%;
-    border-top: 1px solid #9e9e9e;
-    margin: 15px 0px;
-    float: left;
-}
-
-.amount-consume span {
-    font-size: 11px;
-    display: block;
-    font-family: "Roboto";
-}
-.amount-consume span.small {
-    display: inline-block;
-    font-size: 15px;
-    margin-right: 5px;
-}
-.amount-consume strong {
-    font-size: 28px;
-    display: block;
-    font-family: "Roboto";
-}
-
-.btn-buy a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0px;
-    text-align: center;
-    color: white;
-    background-color: #99cc02;
-    border-radius: 6px;
-}
-
-
-
-
 
 /* FOOTER */
 
@@ -199,13 +107,6 @@ footer .link {
 footer.col-md-12 {
     text-align: center;
 }
-
-
-
-
-
-
-
 
 
 @media screen and (max-width:991px) and (min-width:768px) {
@@ -240,6 +141,7 @@ footer.col-md-12 {
   }
   
   .sidebar a {
+    font-size: 14px;
     display: block;
     color: #005c84;
     padding: 6px;
@@ -284,7 +186,7 @@ width: 100%;
 border: none;
 text-align: left;
 outline: none;
-font-size: 14px;
+font-size: 16px;
 }
 
 .active, .collapsible:hover {
@@ -329,7 +231,7 @@ background-color: rgba(0,0,0,0.5); /*dim the background*/
  */
 .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 15%;
   }
 
   .swiper-slide {
@@ -422,12 +324,17 @@ margin-top: 0px;
 
 .mostrarbanner{
     height: 0px;
+    display: none;
 }
 
 .btn-hidebanner {
     position: absolute; 
     top: 18.5%;
-    left: 95.5%;
+    left: 92.5%;
+}
+
+.btn-hidebanner i{
+ padding: 2px;
 }
 
 .upbutton{
@@ -438,4 +345,8 @@ margin-top: 0px;
     color: #99cc02;
     font-weight: bold;
     border: 2px solid #99cc02;
+}
+
+.icontext{
+    font-size: 14px;
 }
