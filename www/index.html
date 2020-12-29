@@ -25,7 +25,7 @@
                 <a class="active" href="#"><i class="fas fa-user-circle" style="font-size: 50px;"></i><br> Bienvenido <strong>Usuario</strong><br>
                 <p style="color: black; font-size: 12px;">Línea Asociada: 56941971111</p></a>
                 <!-- <a href="">Línea Asociada: linea</a> -->
-                <a href="#"><i class="fas fa-home" style="color: #65c810;"></i>Página Principal</a>
+                <a href="./index.html"><i class="fas fa-home" style="color: #65c810;"></i>Página Principal</a>
                 <a href="#"><i class="fas fa-shopping-bag" style="color: #15AABF;"></i>Mis Bolsas Disponibles</a>
                 <a href="#"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
                 <a href="#" class="collapsible"><i class="fas fa-shopping-cart" style="color: #e00000;"></i>Compra de Bolsas</a>
@@ -105,7 +105,7 @@
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
               <div class="row"> 
-              <img src="img/sos.png" width="35px">
+              <img src="img/sos.png" width="55px">
         </div>
         <div class="row">
             <p class="text-center icontext">SOS</p>
@@ -123,8 +123,6 @@
       </div>
       </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -138,13 +136,8 @@
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 4,
       spaceBetween: 1,
-      slidesPerGroup: 2,
       loop: true,
       loopFillGroupWithBlank: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -152,50 +145,56 @@
     });
   </script>
             <p class="float-right mt-3 mr-2"><strong>Saldo: $2.500</strong></p>
-            <style>
-                
-            </style>
-            <p>
-                <!-- <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                      Bolsas Destacadas
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Bolsas de Datos</a></li>
-                      <li><a class="dropdown-item" href="#">Bolsa de Minutos</a></li>
-                      <li><a class="dropdown-item" href="#">Bolsa de SMS</a></li>
-                    </ul>
-                  </div> -->
-
-                  <select class="form-control select-custom">
-                    <option value="collapseExample">Bolsas Destacadas</option>
-                    <option value="asd">Bolsas de Datos</option>
-                    <option>Bolsas de Minutos</option>
-                    <option>Bolsas de SMS</option>
-                  </select>
-        
-                <!-- <button class="btn btn-bolsas btn- btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  <p class="m-0">Bolsas Destacadas</p>
-                </button> -->
             
-              </p>
-              <div class="" id="test1">
-                <div class="card card-bolsas" style="width: 340px; padding: 10px; margin: 10px;">
+            <!-- test -->
+
+            <!-- fin test -->
+            <div class="m-1">
+                <form action="" name="selectBags">
+
+                  <select class="form-control select-custom" name="BagList" onchange="showBags()">
+                    <option value="destacadas">Bolsas Destacadas</option>
+                    <option value="bagdata">Bolsas de Datos</option>
+                    <option value="bagmin">Bolsas de Minutos</option>
+                    <option value="bagsms">Bolsas de SMS</option>
+                  </select>
+
+                </form>
+            </div>
+            <!-- DIV BOLSAS DESTACADAS -->
+            <div id="ShowDestacadas">
+              <div class="">
+                <div class="card card-bolsas m-3">
                     <div class="card-body" style="color: #005c84;">
                       <h5 class="card-title font-weight-bold"><i class="fas fa-star" style="color: #f5f540;"></i>Navega 2 GB</h5>
                       <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Datos 24Hrs</h6>
                       <p class="card-text"></p>
                       <div class="row">
                           <div class="col"><p class="font-weight-bold">$2.990</p></div>
-                          <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                          <div class="col"><a href="./resumen.html" class="btn btn-card">Comprar TEST OK</a></div>
                       </div>
                       
                       
                     </div>
                   </div>
               </div>
-              <div class="" id="test2">
-                <div class="card card-bolsas" style="width: 340px; padding: 10px; margin: 10px;">
+              <div class="">
+                <div class="card card-bolsas m-3">
+                    <div class="card-body" style="color: #005c84;">
+                      <h5 class="card-title font-weight-bold"><i class="fas fa-star" style="color: #f5f540;"></i>Bolsa Internet GB Libres</h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de internet Libre 5 dias</h6>
+                      <p class="card-text"></p>
+                      <div class="row">
+                          <div class="col"><p class="font-weight-bold">$1.990</p></div>
+                          <div class="col"><a href="./resultadoerror.html" class="btn btn-card">Comprar TEST ERROR</a></div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="">
+                <div class="card card-bolsas m-3">
                     <div class="card-body" style="color: #005c84;">
                       <h5 class="card-title font-weight-bold"><i class="fas fa-star" style="color: #f5f540;"></i>Bolsa Internet GB Libres</h5>
                       <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de internet Libre 5 dias</h6>
@@ -209,37 +208,161 @@
                     </div>
                   </div>
               </div>
-              <div class="" id="test2">
-                <div class="card card-bolsas" style="width: 340px; padding: 10px; margin: 10px;">
-                    <div class="card-body" style="color: #005c84;">
-                      <h5 class="card-title font-weight-bold"><i class="fas fa-star" style="color: #f5f540;"></i>Bolsa Internet GB Libres</h5>
-                      <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de internet Libre 5 dias</h6>
-                      <p class="card-text"></p>
-                      <div class="row">
-                          <div class="col"><p class="font-weight-bold">$1.990</p></div>
-                          <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
-                      </div>
-                      
-                      
-                    </div>
-                  </div>
-              </div>
-
-        <!-- CONTENIDO -->
-
-
-    <footer class="col-md-12" style="background-color: #00A9E0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <span><a href="http://www.movistar.cl/" class="link">Movistar</a> - Todos los derechos reservados</span>
-                </div>
             </div>
-        </div>
-    </footer>
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
+            <!-- DIV BOLSAS DE DATOS -->
+
+            <div id="ShowBagData" style="display: none;">
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">Navega 2 GB</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Datos 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$4.490</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">Navega 1 GB</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Datos 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$3.490</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">Navega 750 MB</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Datos 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- DIV BOLSAS MINUTOS -->
+
+              <div id="ShowBagMin" style="display: none;">
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">100 Minutos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Minutos 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$2.990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">50 Minutos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Minutos 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$1.990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">10 Minutos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de Minutos 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$1.990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- DIV BOLSAS SMS -->
+
+              <div id="ShowBagSms" style="display: none;">
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">100 SMS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de SMS 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$2.990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">50 SMS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de SMS 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$1.990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="card card-bolsas m-3">
+                      <div class="card-body" style="color: #005c84;">
+                        <h5 class="card-title font-weight-bold">10 SMS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-shopping-bag" style="color: #99cc02;"></i>Bolsa de SMS 30 días</h6>
+                        <p class="card-text"></p>
+                        <div class="row">
+                            <div class="col"><p class="font-weight-bold">$1.990</p></div>
+                            <div class="col"><a href="#" class="btn btn-card">Comprar</a></div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+
+              <script>
+                        var coll = document.getElementsByClassName("collapsible");
         var i;
         
         for (i = 0; i < coll.length; i++) {
@@ -253,6 +376,47 @@
             } 
         });
         }
+                  function showBags(){
+                      if(document.selectBags.BagList.options[document.selectBags.BagList.selectedIndex].value == 'destacadas'){
+                          document.getElementById('ShowDestacadas').style.display='block';
+                          document.getElementById('ShowBagData').style.display='none';
+                          document.getElementById('ShowBagMin').style.display='none';
+                          document.getElementById('ShowBagSms').style.display='none';
+                      }
+                      else if(document.selectBags.BagList.options[document.selectBags.BagList.selectedIndex].value == 'bagdata'){
+                        document.getElementById('ShowBagData').style.display='block';
+                        document.getElementById('ShowDestacadas').style.display='none';
+                        document.getElementById('ShowBagMin').style.display='none';
+                        document.getElementById('ShowBagSms').style.display='none';
+                      }
+                      else if(document.selectBags.BagList.options[document.selectBags.BagList.selectedIndex].value == 'bagmin'){
+                        document.getElementById('ShowBagMin').style.display='block';
+                        document.getElementById('ShowBagData').style.display='none';
+                        document.getElementById('ShowDestacadas').style.display='none';
+                        document.getElementById('ShowBagSms').style.display='none';
+                      }
+                      else if(document.selectBags.BagList.options[document.selectBags.BagList.selectedIndex].value == 'bagsms'){
+                        document.getElementById('ShowBagSms').style.display='block';
+                        document.getElementById('ShowDestacadas').style.display='none';
+                        document.getElementById('ShowBagMin').style.display='none';
+                        document.getElementById('ShowBagData').style.display='none';                        
+                      }
+                  }
+              </script>
+        <!-- Footer -->
+
+
+    <footer class="col-md-12" style="background-color: #00A9E0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span><a href="http://www.movistar.cl/" class="link">Movistar</a> - Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
 
         document.getElementById("btnMenu").addEventListener("click",function(){
   
@@ -270,6 +434,11 @@
   
         document.getElementById("banner").classList.toggle("mostrarbanner");
         document.getElementById("hideBanner").classList.toggle("upbutton");
+        });
+
+        document.getElementsByClassName(' back')[0]
+        .addEventListener('click', function (event) {
+            alert('hola');
         });
 
     </script>

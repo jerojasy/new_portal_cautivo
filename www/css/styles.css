@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Roboto';
     src: url('fonts/Roboto-Regular.eot');
     src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
@@ -20,14 +20,14 @@
         url('fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-}
+} */
 
 html,
 body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TelefonicaWeb', sans-serif;
     color: #727272;
     font-weight: bold;
 }
@@ -255,7 +255,7 @@ background-color: rgba(0,0,0,0.5); /*dim the background*/
     align-items: center;
   }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+/* .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   right: 0px;
   left: auto;
   background: #ececec;
@@ -279,30 +279,7 @@ background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
   font-size: 25px
-}
-
-.swiper-button-next-unique{
-  background-color: red;
-  width: 5%;
-  margin-top: 0px;
-position: absolute;
-top: 50%;
-right: -40px;
-width: 45px;
-height: 45px;
-transform: translateY(-50%);
-}
-.swiper-button-prev-unique{
-  background-color: red;
-  width: 5%;
-  position: absolute;
-top: 50%;
-left: -40px;
-width: 45px;
-height: 45px;
-transform: translateY(-50%);
-margin-top: 0px;
-}
+} */
 
 .btn-bolsas.btn-bolsas {
     border: 2px solid #99cc02;
@@ -344,9 +321,26 @@ margin-top: 0px;
 .select-custom.select-custom{
     color: #99cc02;
     font-weight: bold;
-    border: 2px solid #99cc02;
+    border: 2px solid #99cc02;    
 }
 
 .icontext{
     font-size: 14px;
+}
+
+h4, h5 {
+    color: #00A9E0;
+}
+
+h6 {
+    color: #99cc02;
+}
+
+li{
+    list-style-type: none;
+    color: #005c84;
+}
+
+li:before{
+    content: "- ";
 }

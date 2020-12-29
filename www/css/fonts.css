@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'TelefonicaWeb';
+    src: url('fonts/Telefonica-Regular.eot');
+    src: url('fonts/Telefonica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Telefonica-Regular.woff2') format('woff2'),
+        url('fonts/Telefonica-Regular.woff') format('woff'),
+        url('fonts/Telefonica-Regular.ttf') format('truetype'),
+        url('fonts/Telefonica-Regular.svg#Telefonica-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
