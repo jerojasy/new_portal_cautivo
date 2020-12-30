@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <title>Planes Flexibles</title>
+    <title>Portal Cautivo</title>
 </head>
 <body>
         <!-- HEADER -->
@@ -27,7 +27,7 @@
                 <!-- <a href="">Línea Asociada: linea</a> -->
                 <a href="./index.html"><i class="fas fa-home" style="color: #65c810;"></i>Página Principal</a>
                 <a href="#"><i class="fas fa-shopping-bag" style="color: #15AABF;"></i>Mis Bolsas Disponibles</a>
-                <a href="#"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
+                <a href="./saldo.html"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
                 <a href="#" class="collapsible"><i class="fas fa-shopping-cart" style="color: #e00000;"></i>Compra de Bolsas</a>
                 <div class="content">
                     <ul>
@@ -64,60 +64,60 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
-              <div class="row"> 
+              <div class="row d-flex justify-content-center"> 
               <img src="img/icono_pre.png" width="35px">
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <p class="text-center icontext">Preplan</p>
         </div>
       </div>
       </div>
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
-              <div class="row"> 
+              <div class="row d-flex justify-content-center"> 
               <img src="img/icono_bolsas.png" width="35px">
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <p class="text-center icontext">Bolsas</p>
         </div>
       </div>
       </div>
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
-              <div class="row"> 
+              <div class="row d-flex justify-content-center"> 
               <img src="img/icono_roam.png" width="35px">
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <p class="text-center icontext">Roaming</p>
         </div>
       </div>
       </div>
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
-              <div class="row"> 
+              <div class="row d-flex justify-content-center"> 
               <img src="img/balance.png" width="35px">
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <p class="text-center icontext">Recarga</p>
         </div>
       </div>
       </div>
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
-              <div class="row"> 
+              <div class="row d-flex justify-content-center"> 
               <img src="img/sos.png" width="55px">
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <p class="text-center icontext">SOS</p>
         </div>
       </div>
       </div>
       <div class="swiper-slide">
           <div class="col-xs-2 col-md-4 justify-content-center">
-              <div class="row"> 
+              <div class="row d-flex justify-content-center"> 
               <img src="img/SALTA CAUTIVO.svg" width="35px">
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <p class="text-center icontext">Salta a Plan</p>
         </div>
       </div>
@@ -134,7 +134,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 1,
       loop: true,
       loopFillGroupWithBlank: true,
@@ -144,12 +144,16 @@
       },
     });
   </script>
-            <p class="float-right mt-3 mr-2"><strong>Saldo: $2.500</strong></p>
+<div class="card border-primary text-right m-2">
+  <div class="card-body m-0 p-2">
+    <p class="m-0">Tu saldo es: <strong>$2.500</strong></p>
+  </div>
+</div>
             
             <!-- test -->
 
             <!-- fin test -->
-            <div class="m-1">
+            <div class="m-2">
                 <form action="" name="selectBags">
 
                   <select class="form-control select-custom" name="BagList" onchange="showBags()">
