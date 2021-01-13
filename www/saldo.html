@@ -47,7 +47,7 @@
                 <div class="container" style="background-color: #00A9E0;">
                     <div class="row">
                         <div class="col-xs-2 ml-2">
-                            <i class="fas fa-bars" id="btnMenu" style="color: white; font-size: 24px; margin-top: 5px;"></i>
+                            <i class="fas fa-bars" id="btnMenu"></i>
                         </div>
                         <div class="col-xs-4">
                             <a href="#"><img src="img/movistarlogo.png" alt="Logo Movistar" width="150px"></a>
@@ -57,7 +57,7 @@
             </header>
             <div class="banner" id="banner">
                 <img src="img/banneriphone.jpg" width="100%" height="auto">
-                <a id="hideBanner" class="btn-hidebanner"><i class="fas fa-times" style="color:#99cc02; background-color: #ffffff;"></i></a>
+                <a id="hideBanner" class="btn-hidebanner"><i class="fas fa-chevron-up" style="color:#99cc02; background-color: #ffffff;"></i></a>
             </div>
             <!-- Swiper -->
   <div class="swiper-container">
@@ -134,7 +134,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 1,
       loop: true,
       loopFillGroupWithBlank: true,
@@ -152,47 +152,49 @@
     </div>
   </div>
 
-  <div class="">
-    <div class="card card-bolsas m-3">
-        <div class="card-body" style="color: #005c84;">
-          <h5 class="card-title font-weight-bold">Datos 2 GB</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Internet 2 GB</h6>
-          <p class="card-text"></p>
-          
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #00A9E0;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1,2 GB Utilizados</div>
-            <div class="progress-bar bg-success" role="progressbar" style="width: 50%; background-color: #99cc02 !important;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-            <div>
-                <p class="float-left" style="font-size: 12px; font-weight: bold; color: #99cc02;">0%</p>
-                <p class="float-right" style="font-size: 12px; font-weight: bold; color: #99cc02;">100%</p>
-            </div>
+    <div style="height: 100%;">  
+            <div class="">
+            <div class="card card-bolsas m-3">
+                <div class="card-body" style="color: #005c84;">
+                <h5 class="card-title font-weight-bold">Datos 2 GB</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Internet 2 GB</h6>
+                <p class="card-text"></p>
+                
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #00A9E0;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1,2 GB Utilizados</div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%; background-color: #99cc02 !important;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                    <div>
+                        <p class="float-left" style="font-size: 12px; font-weight: bold; color: #99cc02;">0%</p>
+                        <p class="float-right" style="font-size: 12px; font-weight: bold; color: #99cc02;">100%</p>
+                    </div>
 
-        </div>
-      </div>
-  </div>
-  <div class="">
-    <div class="card card-bolsas m-3">
-        <div class="card-body" style="color: #005c84;">
-          <h5 class="card-title font-weight-bold">Libre Gamers 15 dias</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Bolsa Gamers x $1.990 x 15 días</h6>
-          <p class="card-text"></p>
-          
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #99cc02 !important;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color: #99cc02;">Ilimitado</div>
-              </div>
-              <div>
-                <p class="float-left" style="font-size: 12px; font-weight: bold; color: #99cc02;">0%</p>
-                <p class="float-right" style="font-size: 12px; font-weight: bold; color: #99cc02;">100%</p>
+                </div>
             </div>
-
         </div>
-      </div>
-  </div>
+        <div class="">
+            <div class="card card-bolsas m-3">
+                <div class="card-body" style="color: #005c84;">
+                <h5 class="card-title font-weight-bold">Libre Gamers 15 dias</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Bolsa Gamers x $1.990 x 15 días</h6>
+                <p class="card-text"></p>
+                
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #99cc02 !important;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color: #99cc02;">Ilimitado</div>
+                    </div>
+                    <div>
+                        <p class="float-left" style="font-size: 12px; font-weight: bold; color: #99cc02;">0%</p>
+                        <p class="float-right" style="font-size: 12px; font-weight: bold; color: #99cc02;">100%</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Footer -->
 
 
-    <footer class="col-md-12" style="background-color: #00A9E0;">
+    <footer class="col-md-12 fixed-bottom" style="background-color: #00A9E0;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">

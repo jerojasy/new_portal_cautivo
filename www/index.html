@@ -47,7 +47,7 @@
                 <div class="container" style="background-color: #00A9E0;">
                     <div class="row">
                         <div class="col-xs-2 ml-2">
-                            <i class="fas fa-bars" id="btnMenu" style="color: white; font-size: 24px; margin-top: 5px;"></i>
+                            <i class="fas fa-bars" id="btnMenu"></i>
                         </div>
                         <div class="col-xs-4">
                             <a href="#"><img src="img/movistarlogo.png" alt="Logo Movistar" width="150px"></a>
@@ -57,7 +57,8 @@
             </header>
             <div class="banner" id="banner">
                 <img src="img/banneriphone.jpg" width="100%" height="auto">
-                <a id="hideBanner" class="btn-hidebanner"><i class="fas fa-times" style="color:#99cc02; background-color: #ffffff;"></i></a>
+                <a id="hideBanner" class="btn-hidebanner"><i class="fas fa-chevron-up" style="color:#99cc02; background-color: #ffffff;"></i></a>
+                <a id="hideBanner" class="btn-hidebanner"><i class="fas fa-chevron-down" style="color:#99cc02; background-color: #ffffff; display: none;"></i></a>
             </div>
             <!-- Swiper -->
   <div class="swiper-container">
@@ -134,7 +135,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 1,
       loop: true,
       loopFillGroupWithBlank: true,
@@ -166,7 +167,7 @@
                 </form>
             </div>
             <!-- DIV BOLSAS DESTACADAS -->
-            <div id="ShowDestacadas">
+            <div id="ShowDestacadas" class="bolsas">
               <div class="">
                 <div class="card card-bolsas m-3">
                     <div class="card-body" style="color: #005c84;">
@@ -175,7 +176,7 @@
                       <p class="card-text"></p>
                       <div class="row">
                           <div class="col"><p class="font-weight-bold">$2.990</p></div>
-                          <div class="col"><a href="./resumen.html" class="btn btn-card">Comprar TEST OK</a></div>
+                          <div class="col"><a href="./resumen.html" class="btn btn-card">Comprar OK</a></div>
                       </div>
                       
                       
@@ -190,7 +191,7 @@
                       <p class="card-text"></p>
                       <div class="row">
                           <div class="col"><p class="font-weight-bold">$1.990</p></div>
-                          <div class="col"><a href="./resultadoerror.html" class="btn btn-card">Comprar TEST ERROR</a></div>
+                          <div class="col"><a href="./resultadoerror.html" class="btn btn-card">Comprar error</a></div>
                       </div>
                       
                       
@@ -216,7 +217,7 @@
 
             <!-- DIV BOLSAS DE DATOS -->
 
-            <div id="ShowBagData" style="display: none;">
+            <div id="ShowBagData" class="bolsas" style="display: none;">
                 <div class="">
                   <div class="card card-bolsas m-3">
                       <div class="card-body" style="color: #005c84;">
@@ -266,7 +267,7 @@
 
               <!-- DIV BOLSAS MINUTOS -->
 
-              <div id="ShowBagMin" style="display: none;">
+              <div id="ShowBagMin" class="bolsas" style="display: none;">
                 <div class="">
                   <div class="card card-bolsas m-3">
                       <div class="card-body" style="color: #005c84;">
@@ -316,7 +317,7 @@
 
               <!-- DIV BOLSAS SMS -->
 
-              <div id="ShowBagSms" style="display: none;">
+              <div id="ShowBagSms" class="bolsas" style="display: none;">
                 <div class="">
                   <div class="card card-bolsas m-3">
                       <div class="card-body" style="color: #005c84;">
@@ -410,7 +411,7 @@
         <!-- Footer -->
 
 
-    <footer class="col-md-12" style="background-color: #00A9E0;">
+    <footer class="col-md-12 fixed-bottom" style="background-color: #00A9E0;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
