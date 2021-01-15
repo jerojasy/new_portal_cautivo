@@ -80,7 +80,7 @@ p {
 }
 
 .armaprepago {
-    margin-top: 5px;
+    margin-top: 2px;
     background-color: #5ac600;
     text-align: center;
     padding: 2px;
@@ -88,7 +88,7 @@ p {
 
 .armaprepago a {
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0px 5% 0px 5%;
 }
 
@@ -360,6 +360,19 @@ li{
 
 li:before{
     content: "- ";
+}
+
+.comprabolsa li{
+    list-style-type: none;
+    color: #005c84;
+    position: relative;
+}
+
+.comprabolsa li:before{
+    content: "- ";
+    position: absolute;
+    left: -2px;
+    top: 3px;
 }
 
 .card-success {
