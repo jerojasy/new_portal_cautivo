@@ -27,10 +27,10 @@
                 <!-- <a href="">Línea Asociada: linea</a> -->
                 <a href="./index.html"><i class="fas fa-home" style="color: #65c810;"></i>Página Principal</a>
                 <!-- <a href="#"><i class="fas fa-shopping-bag" style="color: #15AABF;"></i>Mis Bolsas Disponibles</a> -->
-                <a href="#"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
+                <a href="./saldo.html"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
                 <a href="#" class="collapsible"><i class="fas fa-shopping-cart" style="color: #e00000;"></i>Compra de Bolsas</a>
                 <div class="content">
-                    <ul>
+                    <ul class="comprabolsa">
                         <li><a href="">Normales</a></li>
                         <li><a href="">Roaming</a></li>
                         <li><a href="">Recarga</a></li>
@@ -205,6 +205,41 @@
     </footer>
 
     <script>
+                        document.querySelector('.btn-hidebanner').addEventListener('click', function() {
+                const icon = this.querySelector('i');
+
+                if (icon.classList.contains('fa-chevron-up')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+              });
+
+              function showBar(){
+                if(document.getElementById('barratitulo').style.display == 'block'){
+                  document.getElementById('barratitulo').style.display = 'none';
+                }else{
+                  document.getElementById('barratitulo').style.display = 'block';
+                }
+              };
+
+
+             var coll = document.getElementsByClassName("collapsible");
+             var i;
+        
+              for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                  } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                  } 
+              });
+              }
 
         document.getElementById("btnMenu").addEventListener("click",function(){
   
